@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Common CSS */
+.container {
+  max-width: 1240px;
+  margin: 0% auto;
+}
+.between {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+}
+/* Common CSS End */
+
+/* Navbar Start */
+.navbar {
+  display: flex;
+  gap: 50px;
+  max-width: 93%;
+  margin: 0% auto;
+  padding: 40px 30px;
+  color: #0b0736;
+
+  & h3 {
+    font-size: 24px;
+    font-weight: 700px;
+  }
+  & div {
+    display: flex;
+    border: 1px solid gainsboro;
+    gap: 8px;
+    font-weight: 600px;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+  }
+}
+.hero-img {
+  position: absolute;
+  width: 50dvw;
+  top: 4px;
+  right: 0;
+  z-index: -155;
+}
+.banner-section {
+  padding: 120px 0;
+  margin-left: 140px;
+
+  & h1 {
+    font-size: 90px;
+    font-weight: 600px;
+    color: #0b0736;
+  }
+  & div {
+    padding: 20px 0;
+    display: flex;
+    font-size: 24px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-weight: 400px;
+    color: #0b0736;
+    gap: 4px;
+  }
+
+  & button {
+    padding: 18px 25px;
+    background-color: #0b0736;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+}
+/* This is target section design */
+.target-section {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 140px 0;
+  align-items: center;
+  & .target-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  & .details {
+    vertical-align: center;
+    justify-content: center;
+  }
+  & .details h2 {
+    font-size: 68px;
+    color: #0b0736;
+
+    /* align-items: center;
+    vertical-align: center; */
+  }
+  & .details p {
+    padding: 40px 0;
+    font-size: 25px;
+    color: #808080;
+    font-weight: 400px;
+  }
+  .apple_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 28px;
+    background-color: #cce8fd;
+    width: fit-content;
+    border-radius: 14px;
+  }
+  & .apple_btn p {
+    margin-top: -28px;
+    font-size: 12px;
+    font-weight: 400px;
+    line-height: 10px;
+    color: #9393c4;
+  }
+  & .apple_btn img {
+    width: 25px;
+  }
+  & .apple_btn h3 {
+    margin-top: -29px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #0b0736;
+  }
+}
+/* Track Section */
+.track-section {
+  position: relative;
+
+  .bg-track {
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    top: 10%;
+  }
+
+  .left-section {
+    & h2 {
+      font-size: 85px;
+    }
+    .image-grid {
+      padding-top: 80px;
+      padding-left: 80px;
+      display: flex;
+      gap: 20px;
+
+      & div {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      & div:nth-child(2) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .right-section {
+    & h3 {
+      font-size: 40px;
+      color: #9393c4;
+      font-weight: 400;
+      padding-right: 8rem;
+    }
+
+    .details-div {
+      display: flex;
+      align-items: start;
+      gap: 30px;
+      margin-top: 60px;
+
+      & div {
+        padding-top: 20px;
+
+        & h2 {
+          font-size: 24px;
+          font-size: 600;
+        }
+
+        & p {
+          font-size: 20px;
+          color: #9393c4;
+          font-size: 400;
+          padding-top: 20px;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
+.calories {
+  margin-top: 40px;
+
+  & .apple_btn {
+    margin-left: 20px;
+  }
+  h2,
+  p {
+    margin-left: 20px;
+  }
+}
+.company-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.join-cls {
+  width: 90%;
+  align-items: center;
+  margin: 120px auto;
+  border-radius: 45px;
+  background-color: #d9f4ff;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  details-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0% auto;
+    gap: 24px;
+    justify-content: center;
+  }
+  & h2 {
+    font-size: 68px;
+    margin-left: 60px;
+  }
+  .details-btn2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 28px;
+    background-color: #130f49;
+    width: fit-content;
+    border-radius: 14px;
+    margin-left: 60px;
+    margin-top: 30px;
+
+    & p {
+      font-size: 12px;
+      color: #9393c4;
+    }
+    & h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+    }
+
+    & img {
+      width: 25px;
+    }
+  }
+}
+footer {
+  text-align: center;
+  padding: 12px 0;
+
+  & p {
+    font-size: 17px;
+    color: #9393c4;
+  }
+}
+/* Responsive for mobile */
+@media (max-device-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .between {
+    gap: 3rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .banner-section {
+    padding: 60px 16px;
+    position: relative;
+    right: 115px;
+
+    & h1 {
+      font-size: 40px;
+    }
+
+    & div {
+      padding: 16px 0;
+      font-size: 20px;
+    }
+  }
+
+  .track-section {
+    .bg-track {
+      left: 0%;
+      top: 0%;
+      width: 100%;
+    }
+
+    .left-section {
+      & h2 {
+        font-size: 40px;
+      }
+      .image-grid {
+        padding-top: 40px;
+        padding-left: 40px;
+        gap: 16px;
+
+        & div {
+          width: 130px;
+          gap: 16px;
+        }
+      }
+    }
+
+    .right-section {
+      & h3 {
+        font-size: 24px;
+        padding-right: 0rem;
+      }
+
+      .details-div {
+        gap: 16px;
+        margin-top: 24px;
+
+        & div {
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+  .company {
+    margin-top: 50px;
+  }
+
+  .join {
+    margin: 80px auto;
+    border-radius: 24px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    .details {
+      margin: 16px;
+    }
+
+    & h2 {
+      font-size: 40px;
+    }
+
+    .store-design {
+      gap: 12px;
+      padding: 12px 24px;
+      border-radius: 14px;
+
+      & h3 {
+        font-size: 16px;
+      }
+
+      & img {
+        width: 20px;
+      }
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+}
